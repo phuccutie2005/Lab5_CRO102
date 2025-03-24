@@ -14,7 +14,7 @@ export const store = configureStore({
     reducer: persistedReducer,
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware({
-            serializableCheck: false, // Tắt kiểm tra serializable để tránh lỗi với AsyncStorage
+            serializableCheck: false,
         }),
 });
 
